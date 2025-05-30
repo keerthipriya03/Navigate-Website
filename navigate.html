@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Layout</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: skyblue;
+        color: #333;
+    }
+
+    header {
+        background-color: rgb(142, 172, 184);
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .nav-links a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 20px;
+        text-align: center;
+    }
+
+    section{
+        padding: 50px;
+    }
+    section h1{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    section h2,p{
+        text-align: center;
+        padding: 20px;
+    }
+    section ol{
+        padding-left: 60px;
+    }
+    .image{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+        gap: 5px;  /* Optional: Adds space between images */
+    }
+
+    .image img{
+        width: 600px;
+        height: 500px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    #Map{
+        text-align: center;
+        margin: 20px 0;
+    }
+    #Map iframe {
+        display: inline-block; /* Makes iframe center properly inside text-align:center */
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        /* position: fixed; */
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Welcome to the City of Destination....</h1>
+        <p>Information about the spots present in the <b>Vizag</b>.</p>
+    </main>
+
+    <header>
+        <div class="nav">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#Map">Map</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1>Vizag - The City of Destination</h1>
+        <p>Visakhapatnam, often called Vizag, is a beautiful coastal city located in the Indian state of Andhra Pradesh. Nestled between the Eastern Ghats and the Bay of Bengal, it offers a perfect blend of natural beauty, historical significance, and modern attractions.It is a perfect holiday spot to enjoy with your family and friends</p>
+        <h2>🏖️ Top Tourist Attractions</h3>
+        <div class="image">
+            <img src="rkbeach.jpg" >
+            <img src="kailasagiri.jpg">
+            <img src="submarine.jpg">
+            <img src="borracaves.jpg">
+            <img src="araku.jpg">
+            <img src="simhachalam.jpg">
+        </div>
+    </section>
+
+    <section id="info">
+        <h2>Tourism Spots</h2>
+        <p style="font-size: larger;">Information about all the tourism places in Vizag...</p>
+        <ol>
+            <li>RK Beach : Perfect for relaxing walks and beautiful sunrises along the coastline.</li>
+            <li>Araku Valley: Known as the “Ooty of Andhra,” it's a beautiful place to explore.</li>
+            <li>Borra Caves: Located in the Ananthagiri Hills of Araku Valley, these are one of the largest caves in India.</li>
+            <li>Kailasgiri: A hilltop park with panoramic views of the city.</li>
+            <li>Submarine Museum: A museum inside a real submarine.</li>
+            <li>Yarada Beach : A secluded and clean beach surrounded by hills, ideal for peace seekers.</li>
+            <li>Rushikonda Beach: A popular beach for water sports.</li>
+            <li>Simhachalam Temple: A famous Hindu temple.</li>
+            <li>Dolphin’s Nose: A natural rock formation with scenic views.</li>
+            <li>Kambalakonda Wildlife Sanctuary: A protected area for wildlife.</li>
+            <li>Thotlakonda Buddhist Complex – Ruins of an ancient Buddhist monastery overlooking the sea.</li>
+        </ol>
+    </section>
+
+    <section id="Map">
+        <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1MUoKccb-EXLtVom6LRF5m-ULgdg1gBk&ehbc=2E312F"
+            width="800"
+            height="700"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Your Company</p>
+    </footer>
+</body>
+</html>
+
